@@ -1,13 +1,13 @@
-import { ThemeProvider, BaseStyles } from '@primer/react'
+import { ThemeProvider, BaseStyles, Box } from '@primer/react'
+import ActionList from './components/ActionList'
 
-import Playground from './Playground'
-import ColorModeSwitcher from './ColorModeSwitcher'
 function App() {
     return (
-        <ThemeProvider colorMode="auto">
+        <ThemeProvider colorMode="light">
             <BaseStyles>
-                <Playground />
-                <ColorModeSwitcher />
+                <Box m={4}>
+                    <ActionList />
+                </Box>
             </BaseStyles>
         </ThemeProvider>
     )
